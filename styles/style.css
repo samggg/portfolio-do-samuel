@@ -241,10 +241,10 @@ strong{
 
 @keyframes scroll-loop {
     0% {
-        transform: translateX(calc(-100%));
+        transform: translateX(100%); /* Começa fora da tela, à direita */
     }
     100% {
-        transform: translateX(calc(100vw));
+        transform: translateX(-100%); /* Move completamente para fora, à esquerda */
     }
 }
 
@@ -253,6 +253,12 @@ strong{
 @media (max-width: 1015px) {
     .projetos a {
         gap: 0.25rem;
+    }
+
+    .scroll-container {
+        width: 80%;
+        overflow: hidden;
+        margin: 0 auto;
     }
 
     .apresentacao {
@@ -311,6 +317,11 @@ strong{
     .apresentacao {
         text-align: center;
         display: table;
+    }
+    .scroll-container {
+        width: 80%;
+        overflow: hidden;
+        margin: 0 auto;
     }
     .apresentacao__conteudo__titulo {
         font-size: 1.38rem;
