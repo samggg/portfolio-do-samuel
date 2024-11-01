@@ -322,6 +322,11 @@ strong {
 }
 
 @media (max-width: 480px) {
+
+    body {
+        overflow-x: hidden; /* Impede a rolagem horizontal */
+    }
+
     .apresentacao {
         text-align: center;
         display: flex; /* Alterado para flex */
@@ -337,11 +342,11 @@ strong {
     }
 
     .nome {
-        font-size: 1.38rem;
+        font-size: 1.2rem;
     }
 
     .email {
-        font-size: 1.38rem;
+        font-size: 1.2rem;
     }
 
     .apresentacao__conteudo__titulo {
@@ -367,7 +372,7 @@ strong {
     }
 
     .projetos {
-        font-size: 12px;
+        font-size: 0.9rem;
     }
 
     .projetos li {
