@@ -187,12 +187,13 @@ strong {
 }
 
 .scroll-container {
-    width: 80%;
+    width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .scroll-items {
-    display: flex;
+    display: inline-flex;
     list-style: none;
     padding: 10px;
     animation: scroll-loop 20s linear infinite;
@@ -246,13 +247,10 @@ strong {
 
 @keyframes scroll-loop {
     0% {
-        transform: translateX(100%);
-        /* Começa fora da tela, à direita */
+        transform: translateX(0); /* Começa na posição original */
     }
-
     100% {
-        transform: translateX(-100%);
-        /* Move completamente para fora, à esquerda */
+        transform: translateX(-100vw); /* Move completamente para fora, à esquerda */
     }
 }
 
@@ -264,9 +262,9 @@ strong {
     }
 
     .scroll-container {
-        width: 80%;
+        width: 100%;
         overflow: hidden;
-        margin: 0 auto;
+        position: relative;
     }
 
     .apresentacao {
@@ -336,9 +334,9 @@ strong {
         padding: 0; /* Removendo padding */
     }
     .scroll-container {
-        width: 80%;
+        width: 100%;
         overflow: hidden;
-        margin: 0 auto;
+        position: relative;
     }
 
     .nome {
