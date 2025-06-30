@@ -120,6 +120,19 @@ strong {
     max-width: 75rem;
     margin: 0 auto;
 }
+.apresentacao__foto {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
+}
+.apresentacao__foto img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
 
 .apresentacao__conteudo {
     max-width: 100%;
@@ -127,6 +140,8 @@ strong {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    flex: 1 1 60%;
+    padding-right: 2rem;
 }
 
 .apresentacao__conteudo__titulo {
@@ -247,12 +262,13 @@ strong {
 
 @keyframes scroll-loop {
     0% {
-        transform: translateX(0); /* Começa na posição original */
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(-100vw); /* Move completamente para fora, à esquerda */
+        transform: translateX(-50%);
     }
 }
+
 
 
 /* Estilos responsivos */
@@ -322,16 +338,16 @@ strong {
 @media (max-width: 480px) {
 
     body {
-        overflow-x: hidden; /* Impede a rolagem horizontal */
+        overflow-x: hidden;
     }
 
     .apresentacao {
         text-align: center;
-        display: flex; /* Alterado para flex */
-        flex-direction: column; /* Altera a direção para coluna */
-        width: 100%; /* Adicionando largura de 100% */
-        margin: 0; /* Removendo margens */
-        padding: 0; /* Removendo padding */
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        margin: 0;
+        padding: 0; 
     }
     .scroll-container {
         width: 100%;
